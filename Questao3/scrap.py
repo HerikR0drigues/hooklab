@@ -1,3 +1,4 @@
+import re
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -13,8 +14,13 @@ if response.status_code == 200:
     title_tag = soup.find('h1', {'data-testid': 'heading-product-title'})
     title = title_tag.get_text(strip=True) if title_tag else 'Título não encontrado'
 
-    price_tag = soup.find('p', {'data-testid': 'price-original'})
-    price = price_tag.get_text(strip=True) if price_tag else 'Preço não encontrado'
+    price_tag = soup.find('p', {'data-testid': 'price-value'})
+
+    if price_tag:
+        price = price_tag.get_text(strip=True)
+        price_numeric = re.sub(r'[^\d,]', '', price)
+    else:
+        price_numeric = 'Preço não encontrado'
 
     # Apos verificar o Network da página, foi encontrada uma API que tem a resposta se o estoque está disponivel para o cep informado (Função importada do arquivo scrapStock na mesma pasta)
     stock_availability = scrapStock.verificar_estoque();
@@ -22,7 +28,7 @@ if response.status_code == 200:
     product_info = {
         'title': title,
         'stock_availability': stock_availability,
-        'price': price
+        'price_pix': price_numeric
     }
 
     json_file_path = 'product_info.json'
