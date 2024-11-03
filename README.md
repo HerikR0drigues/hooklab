@@ -21,7 +21,7 @@ python scrap.py
 - `Questao1` - Script para raspagem de dados do reddit, ele recupera o título, upvotes e links das três primeiras postagens do subreddit r/programming.
 - `Questao2` - Script de consulta de produto no site CLIMARIO, você fornece o item que quer buscar através do console (Exemplo: geladeira) e ele retorna o Link da oferta, Link da imagem, Preço e Título.
 - `Questao3` - Script para raspagem de dados, ele recupera o título, preço e disponibilidade de frete via API GraphQL de um produto específico do MAGAZINE LUIZA.
-- `Questao4` - Script para análise de dados, ele lê um arquivo JSON já disponível dentro da propria pasta e faz as algumas analises.
+- `Questao4` - Script para análise de dados, ele lê um arquivo JSON já disponível dentro da propria pasta e faz algumas analises.
 
 ## Observações
 
