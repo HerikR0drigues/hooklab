@@ -27,7 +27,6 @@ python scrap.py
 ## Observações
 
 - `Questao1`: Foi usado Selenium para pegar os números de "upvotes" pois ele se encontrava em uma shadow-root, sendo assim só sendo possível recuperar pelo selenium.
-<<<<<<< HEAD
 - `Questao2Bonus`: O script apresenta comportamento inesperado ao processar consultas (queries) com espaços, como em 'ar condicionado' mesmo após formatação da URL. Para consultas com uma só palavra e que contenha o item no site está OK.
 - `Questao2Bonus`: Por razões desconhecidas, o script só carrega os primeiros 6 itens de uma lista, independentemente de haver mais itens disponíveis.
 - `Questao3`: Foi encontrada uma requisição API GraphQL que responde à disponibilidade de frete conforme o CEP. Entretanto, as variáveis do script foram ajustadas para um link específico de produto, o que significa que o código é funcional apenas para esse produto.
