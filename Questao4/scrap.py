@@ -58,28 +58,29 @@ print("\n=======================================================================
 
 # =============================================== VISUALIZAÇÃO DE DADOS ===============================================
 
-# Configurações de estilo para os gráficos
-
+# Paleta personalizada
+cores_personalizadas1 = ["blue", "#FF1493", "green"]
+cores_personalizadas2 = ["#FF1493", "blue", "green"]
 
 # Gráfico 1: Distribuição de Gênero dos Consumidores
-plt.figure(figsize=(8, 5))
-sns.barplot(x=distribuicao_genero.index, y=distribuicao_genero.values, palette="viridis")
+plt.figure(figsize=(10, 6))
+sns.barplot(x=distribuicao_genero.index, y=distribuicao_genero.values, palette=cores_personalizadas1)
 plt.title("Distribuição de Gênero dos Consumidores")
 plt.xlabel("Gênero")
 plt.ylabel("Quantidade de Consumidores")
 plt.show()
 
 # Gráfico 2: Gasto Total por Gênero
-plt.figure(figsize=(8, 5))
-sns.barplot(x=gasto_por_genero.index, y=gasto_por_genero.values, palette="inferno")
+plt.figure(figsize=(10, 6))
+sns.barplot(x=gasto_por_genero.index, y=gasto_por_genero.values, palette=cores_personalizadas2)
 plt.title("Gasto Total por Gênero")
 plt.xlabel("Gênero")
 plt.ylabel("Valor Total Gasto (R$)")
 plt.show()
 
 # Gráfico 3: Distribuição do Valor das Compras
-plt.figure(figsize=(10, 6))
-sns.histplot(dados['Valor'], bins=20, kde=True, color='dodgerblue')
+plt.figure(figsize=(12, 8))
+sns.histplot(dados['Valor'], bins=30, kde=True, color='#6E0DFF')
 plt.title("Distribuição do Valor das Compras")
 plt.xlabel("Valor da Compra (R$)")
 plt.ylabel("Frequência")
