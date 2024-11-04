@@ -31,8 +31,3 @@ python scrap.py
 - `Questao2Bonus`: O script apresenta comportamento inesperado ao processar consultas (queries) com espaços, como em 'ar condicionado' mesmo após formatação da URL. Para consultas com uma só palavra e que contenha o item no site está OK.
 - `Questao2Bonus`: Por razões desconhecidas, o script só carrega os primeiros 6 itens de uma lista, independentemente de haver mais itens disponíveis.
 - `Questao3`: Foi encontrada uma requisição API GraphQL que responde à disponibilidade de frete conforme o CEP. Entretanto, as variáveis do script foram ajustadas para um link específico de produto, o que significa que o código é funcional apenas para esse produto.
-=======
-- `Questao2`: O script apresenta comportamento inesperado ao processar consultas (queries) com espaços, como em 'ar condicionado' mesmo após formatação da URL. Para consultas com uma só palavra e que contenha o item no site está OK.
-- `Questao2`: Por razões desconhecidas, o script só carrega os primeiros 6 itens de uma lista, independentemente de haver mais itens disponíveis.
-- `Questao3`: Foi encontrada uma requisição API GraphQL que responde à disponibilidade de frete conforme o CEP. Entretanto, as variáveis do script foram ajustadas para um link específico de produto, o que significa que o código é funcional apenas para esse produto.
->>>>>>> 6ad46c17d6104bfe4efea4b0505f8b544f201ba5
